@@ -1,0 +1,16 @@
+C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\bin\Release\WindowsFormsApp.exe.config
+C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\bin\Release\WindowsFormsApp.exe
+C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\bin\Release\WindowsFormsApp.pdb
+C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\bin\Release\ClassLibrary.dll
+C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\bin\Release\ClassLibrary.pdb
+C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Release\WindowsFormsApp.csproj.AssemblyReference.cache
+C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Release\WindowsFormsApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Release\WindowsFormsApp.MainMenu.resources
+C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Release\WindowsFormsApp.Form2.resources
+C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Release\WindowsFormsApp.LægevagtMenu.resources
+C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Release\WindowsFormsApp.Properties.Resources.resources
+C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Release\WindowsFormsApp.csproj.GenerateResource.cache
+C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Release\WindowsFormsApp.csproj.CoreCompileInputs.cache
+C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Release\WindowsFormsApp.csproj.CopyComplete
+C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Release\WindowsFormsApp.exe
+C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Release\WindowsFormsApp.pdb
