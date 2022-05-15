@@ -37,6 +37,7 @@ namespace ClassLibrary
         CykelOpbæringOgHjælp,
         Lufthavn,
         Storebælt,
-        Øresund
+        Øresund,
+        MeetGreet
     }
 }

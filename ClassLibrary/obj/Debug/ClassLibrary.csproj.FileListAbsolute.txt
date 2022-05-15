@@ -4,3 +4,9 @@ C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\ClassLibrary\obj\Debug\Cla
 C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
 C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\ClassLibrary\obj\Debug\ClassLibrary.dll
 C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\ClassLibrary\obj\Debug\ClassLibrary.pdb
+C:\Users\lucas\Desktop\TaxiPrisBeregner\ClassLibrary\bin\Debug\ClassLibrary.dll
+C:\Users\lucas\Desktop\TaxiPrisBeregner\ClassLibrary\bin\Debug\ClassLibrary.pdb
+C:\Users\lucas\Desktop\TaxiPrisBeregner\ClassLibrary\obj\Debug\ClassLibrary.csproj.AssemblyReference.cache
+C:\Users\lucas\Desktop\TaxiPrisBeregner\ClassLibrary\obj\Debug\ClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\lucas\Desktop\TaxiPrisBeregner\ClassLibrary\obj\Debug\ClassLibrary.dll
+C:\Users\lucas\Desktop\TaxiPrisBeregner\ClassLibrary\obj\Debug\ClassLibrary.pdb

@@ -70,5 +70,10 @@ namespace WindowsFormsApp
             Process.Start("https://www.flightstats.com/v2/");
         }
 
+        private void GetEPrisberegner_Click(object sender, EventArgs e)
+        {
+            var geteMenuStart = new GeteMenu();
+            geteMenuStart.Show();
+        }
     }
 }
