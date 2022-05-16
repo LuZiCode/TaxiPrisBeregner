@@ -38,3 +38,4 @@ C:\Users\lucas\Desktop\TaxiPrisBeregner\WindowsFormsApp\obj\Debug\WindowsFormsAp
 C:\Users\lucas\Desktop\TaxiPrisBeregner\WindowsFormsApp\obj\Debug\WindowsFormsApp.exe
 C:\Users\lucas\Desktop\TaxiPrisBeregner\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
 C:\Users\lucas\Desktop\TaxiPrisBeregner\WindowsFormsApp\obj\Debug\WindowsFormsApp.GeteMenu.resources
+C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Debug\WindowsFormsApp.GeteMenu.resources

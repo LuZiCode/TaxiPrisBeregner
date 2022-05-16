@@ -13,17 +13,18 @@ namespace WindowsFormsApp
 {
     public partial class GeteMenu : Form
     {
-        private readonly TripDto _trip;
+        private readonly TripDtoGetE _tripGetE;
+        public decimal antalKMGetE = 0;
         public GeteMenu()
         {
             InitializeComponent();
 
 
-            _trip = new TripDto()
+            _tripGetE = new TripDtoGetE()
             {
                 ForventetKørtKm = AntalKMnumUpDown.Value,
                 Storvogn = VogntypeComboBox.Text == "Minivan",
-                ValgteTillæg = new List<Tillæg>(),
+                ValgteTillæg = new List<TillægGetE>(),
             };
 
         }
@@ -35,30 +36,30 @@ namespace WindowsFormsApp
 
         private void MeetGreetCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            SetTillæg(MeetGreetCheckBox.Checked, Tillæg.MeetGreet);
+            SetTillæg(MeetGreetCheckBox.Checked, TillægGetE.MeetGreet);
         }
 
         private void StorebæltCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            SetTillæg(StorebæltCheckBox.Checked, Tillæg.Storebælt);
+            SetTillæg(StorebæltCheckBox.Checked, TillægGetE.Storebælt);
         }
 
         private void ØresundCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            SetTillæg(StorebæltCheckBox.Checked, Tillæg.Storebælt);
+            SetTillæg(StorebæltCheckBox.Checked, TillægGetE.Storebælt);
         }
 
-        private void SetTillæg(bool @checked, Tillæg tillæg)
+        private void SetTillæg(bool @checked, TillægGetE tillæg)
         {
             if (@checked)
             {
-                _trip.ValgteTillæg.Add(tillæg);
+                _tripGetE.ValgteTillæg.Add(tillæg);
             }
             else
             {
-                if (!_trip.ValgteTillæg.Contains(tillæg)) return;
+                if (!_tripGetE.ValgteTillæg.Contains(tillæg)) return;
 
-                _trip.ValgteTillæg.Remove(tillæg);
+                _tripGetE.ValgteTillæg.Remove(tillæg);
             }
         }
 
@@ -66,12 +67,12 @@ namespace WindowsFormsApp
         {
             if (VogntypeComboBox.Text == "Minivan")
             {
-                _trip.Storvogn = true;
+                _tripGetE.Storvogn = true;
                 return;
             }
             if (VogntypeComboBox.Text == "Sedan")
             {
-                _trip.Storvogn = false;
+                _tripGetE.Storvogn = false;
                 return;
             }
         }
@@ -89,7 +90,7 @@ namespace WindowsFormsApp
             }
             else
             {
-                _trip.ForventetKørtKm = AntalKMnumUpDown.Value;
+                _tripGetE.ForventetKørtKm = AntalKMnumUpDown.Value;
             }
         }
 
@@ -102,10 +103,10 @@ namespace WindowsFormsApp
             }
             else
             {
-                var kmberegner = new GetEBeregner(_trip);
+                var kmberegner = new GetEBeregner(_tripGetE);
                 var k = kmberegner.StorEllerLilleVogn();
 
-                var tillægberegner = new GetEBeregner(_trip);
+                var tillægberegner = new GetEBeregner(_tripGetE);
                 var t = tillægberegner.TillægBerenger();
 
                 var endeligResultat = k + t;

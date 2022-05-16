@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp", "WindowsF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary", "ClassLibrary\ClassLibrary.csproj", "{EC16066F-F7A1-442A-B976-F85E5147077F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyTaxiCalculater", "MyTaxiCalculater\MyTaxiCalculater.csproj", "{4CE462BA-8C35-4937-8E5F-18FE7D2E374B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EC16066F-F7A1-442A-B976-F85E5147077F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC16066F-F7A1-442A-B976-F85E5147077F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC16066F-F7A1-442A-B976-F85E5147077F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CE462BA-8C35-4937-8E5F-18FE7D2E374B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CE462BA-8C35-4937-8E5F-18FE7D2E374B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CE462BA-8C35-4937-8E5F-18FE7D2E374B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CE462BA-8C35-4937-8E5F-18FE7D2E374B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
