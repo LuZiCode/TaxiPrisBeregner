@@ -11,6 +11,8 @@ namespace ClassLibrary
     {
         //Properties
         public decimal ForventetKørtKm { get; set; }
+
+        public decimal EkstraDistance { get; set; }
         public List<TillægGetE> ValgteTillæg { get; set; }
 
         public bool Storvogn { get; set; }
@@ -28,8 +30,6 @@ namespace ClassLibrary
 
     public enum TillægGetE
     {
-        CykelOpbæringOgHjælp,
-        Lufthavn,
         Storebælt,
         Øresund,
         MeetGreet

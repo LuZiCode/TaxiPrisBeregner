@@ -22,6 +22,20 @@ namespace ClassLibrary
             //TillægBerenger();
         }
 
+        public decimal EkstraStopBeregner()
+        {
+            decimal AntalEkstra = _tripGetE.EkstraDistance;
+            decimal PrisPrEkstraStop = 100;
+
+            if (AntalEkstra < 1)
+            {
+                return 0;
+            }
+            else
+            {
+                return AntalEkstra * PrisPrEkstraStop;
+            }
+        }
 
         public decimal TillægBerenger()
         {
@@ -55,16 +69,151 @@ namespace ClassLibrary
             else return 0;
         }
 
+        //SEDAN TJEKKER KM UDREGNERE
+        /////////////////////////////////////////////////
         private decimal SedanBeregner()
         {
-            return 0;
+            if (_tripGetE.ForventetKørtKm > 100)
+            {
+                decimal result = DistanceFrom100_Sedan();
+                result += DistanceBetween50and100_Sedan();
+                result += DistanceBetween15and50_Sedan();
+                result += DistanceBetween5and15_Sedan();
+                result += DistanceBetween0and5_Sedan();
+
+                return result;
+            }
+
+            else if (_tripGetE.ForventetKørtKm > 50)
+            {
+                decimal result = DistanceBetween50and100_Sedan();
+                result += DistanceBetween15and50_Sedan();
+                result += DistanceBetween5and15_Sedan();
+                result += DistanceBetween0and5_Sedan();
+
+                return result;
+            }
+
+            else if (_tripGetE.ForventetKørtKm > 15)
+            {
+                decimal result = DistanceBetween15and50_Sedan();
+                result += DistanceBetween5and15_Sedan();
+                result += DistanceBetween0and5_Sedan();
+                return result;
+            }
+
+            else if (_tripGetE.ForventetKørtKm > 5)
+            {
+                decimal result = DistanceBetween5and15_Sedan();
+                result += DistanceBetween0and5_Sedan();
+                return result;
+            }
+
+            else if (_tripGetE.ForventetKørtKm >= 0)
+            {
+
+                return DistanceBetween0and5_Sedan(); ;
+            }
+            else return 0;
         }
+
+        //SEDAN INDIVIDUELLE KM UDREGNERE
+        /////////////////////////////////////////////////
+
+        private decimal DistanceBetween0and5_Sedan()
+        {
+            prisprKM = 69m;
+            decimal result = 0;
+            if (_tripGetE.ForventetKørtKm > 5)
+            {
+                result = 5;
+            }
+            else
+            {
+                result = _tripGetE.ForventetKørtKm;
+            }
+            result = result * prisprKM;
+            return result;
+        }
+
+
+        private decimal DistanceBetween5and15_Sedan()
+        {
+            prisprKM = 16m;
+            decimal result = 0;
+            if (_tripGetE.ForventetKørtKm > 15)
+            {
+                result = 10; //result sættes til 10 km da 15 - 5 = 10
+                //HVad gør du hvis den er 14 -5 = 9
+            }
+            else
+            {
+                result = _tripGetE.ForventetKørtKm - 5;
+            }
+
+            result = result * prisprKM;
+            return result;
+        }
+
+        private decimal DistanceBetween15and50_Sedan()
+        {
+            prisprKM = 13m;
+            decimal result = 0;
+            if (_tripGetE.ForventetKørtKm > 50)
+            {
+                result = 35;
+            }
+            else
+            {
+                result = _tripGetE.ForventetKørtKm - 15;
+            }
+
+            result = result * prisprKM;
+            return result;
+        }
+
+        private decimal DistanceBetween50and100_Sedan()
+        {
+            prisprKM = 11m;
+            decimal result = 0;
+            if (_tripGetE.ForventetKørtKm > 100)
+            {
+                result = 50;
+            }
+            else
+            {
+                result = _tripGetE.ForventetKørtKm - 50;
+            }
+
+            result = result * prisprKM;
+            return result;
+        }
+
+        private decimal DistanceFrom100_Sedan()
+        {
+            prisprKM = 13m;
+            decimal result = 0;
+            if (_tripGetE.ForventetKørtKm > 100)
+            {
+                result = _tripGetE.ForventetKørtKm - 100;
+            }
+            else
+            {
+                result = _tripGetE.ForventetKørtKm;
+            }
+            result = result * prisprKM;
+            return result;
+        }
+
+
+        //MINIVAN TJEKKER KM UDREGNER
+        /////////////////////////////////////////////////
 
         public decimal MiniVanBeregner()
         {
             if (_tripGetE.ForventetKørtKm > 100)
             {
-                var result = DistanceFrom100_Minivan();
+                decimal result = DistanceFrom100_Minivan();
                 result += DistanceBetween50and100_Minivan();
                 result += DistanceBetween15and50_Minivan();
                 result += DistanceBetween5and15_Minivan();
@@ -75,7 +224,12 @@ namespace ClassLibrary
 
             else if (_tripGetE.ForventetKørtKm > 50)
             {
-                return DistanceBetween50and100_Minivan() + DistanceBetween15and50_Minivan() + DistanceBetween5and15_Minivan() + DistanceBetween0and5_Minivan();
+                decimal result = DistanceBetween50and100_Minivan();
+                result += DistanceBetween15and50_Minivan();
+                result += DistanceBetween5and15_Minivan();
+                result += DistanceBetween0and5_Minivan();
+
+                return result;
             }
 
             else if (_tripGetE.ForventetKørtKm > 15)
@@ -88,18 +242,20 @@ namespace ClassLibrary
 
             else if (_tripGetE.ForventetKørtKm > 5)
             {
-                var result = DistanceBetween5and15_Minivan();
+                decimal result = DistanceBetween5and15_Minivan();
                 result += DistanceBetween0and5_Minivan();
                 return result;
             }
 
-            else if (_tripGetE.ForventetKørtKm > 0)
+            else if (_tripGetE.ForventetKørtKm >= 0)
             {
-                return DistanceBetween0and5_Minivan();
+                
+                return DistanceBetween0and5_Minivan(); ;
             }
             else return 0;
         }
 
+        //MINIVAN INDIVIDUELLE KM UDREGNERE
         /////////////////////////////////////////////////
 
         private decimal DistanceBetween0and5_Minivan()
@@ -110,10 +266,14 @@ namespace ClassLibrary
             {
                 result = 5;
             }
-
+            else
+            {
+                result = _tripGetE.ForventetKørtKm;
+            }
             result = result * prisprKM;
             return result;
         }
+
 
         private decimal DistanceBetween5and15_Minivan()
         {
@@ -139,7 +299,7 @@ namespace ClassLibrary
             decimal result = 0;
             if (_tripGetE.ForventetKørtKm > 50)
             {
-                _tripGetE.ForventetKørtKm = 35;
+                result = 35;
             }
             else
             {
@@ -156,14 +316,14 @@ namespace ClassLibrary
             decimal result = 0;
             if (_tripGetE.ForventetKørtKm > 100)
             {
-                _tripGetE.ForventetKørtKm = 50;
+                result = 50;
             }
             else
             {
-                _tripGetE.ForventetKørtKm -= 50;
+                result = _tripGetE.ForventetKørtKm - 50;
             }
 
-            result = _tripGetE.ForventetKørtKm * prisprKM;
+            result = result * prisprKM;
             return result;
         }
 
@@ -173,10 +333,13 @@ namespace ClassLibrary
             decimal result = 0;
             if (_tripGetE.ForventetKørtKm > 100)
             {
-                _tripGetE.ForventetKørtKm -= 100;
+                result = _tripGetE.ForventetKørtKm - 100;
             }
-
-            result = _tripGetE.ForventetKørtKm * prisprKM;
+            else
+            {
+                result = _tripGetE.ForventetKørtKm;
+            }
+            result = result * prisprKM;
             return result;
         }
     }

@@ -14,7 +14,6 @@ namespace WindowsFormsApp
     public partial class GeteMenu : Form
     {
         private readonly TripDtoGetE _tripGetE;
-        public decimal antalKMGetE = 0;
         public GeteMenu()
         {
             InitializeComponent();
@@ -23,6 +22,7 @@ namespace WindowsFormsApp
             _tripGetE = new TripDtoGetE()
             {
                 ForventetKørtKm = AntalKMnumUpDown.Value,
+                EkstraDistance = EkstraStopNumUpDown.Value,
                 Storvogn = VogntypeComboBox.Text == "Minivan",
                 ValgteTillæg = new List<TillægGetE>(),
             };
@@ -46,7 +46,7 @@ namespace WindowsFormsApp
 
         private void ØresundCheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            SetTillæg(StorebæltCheckBox.Checked, TillægGetE.Storebælt);
+            SetTillæg(ØresundCheckBox.Checked, TillægGetE.Øresund);
         }
 
         private void SetTillæg(bool @checked, TillægGetE tillæg)
@@ -79,7 +79,14 @@ namespace WindowsFormsApp
 
         private void EkstraStopNumUpDown_ValueChanged(object sender, EventArgs e)
         {
-
+            if (EkstraStopNumUpDown.Value < 0)
+            {
+                return;
+            }
+            else
+            {
+                _tripGetE.EkstraDistance = EkstraStopNumUpDown.Value;
+            }
         }
 
         private void AntalKMnumUpDown_ValueChanged(object sender, EventArgs e)
@@ -109,7 +116,10 @@ namespace WindowsFormsApp
                 var tillægberegner = new GetEBeregner(_tripGetE);
                 var t = tillægberegner.TillægBerenger();
 
-                var endeligResultat = k + t;
+                var ekstrastopberegner = new GetEBeregner(_tripGetE);
+                var ek = ekstrastopberegner.EkstraStopBeregner();
+
+                var endeligResultat = k + t + ek;
 
                 ResultTextBox.Text = endeligResultat.ToString();
             }
