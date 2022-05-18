@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp
 {
-    partial class Form2
+    partial class PrisberegnerMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PrisberegnerMenu));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.comboBoxTurType = new System.Windows.Forms.ComboBox();
             this.closebutton = new System.Windows.Forms.Button();

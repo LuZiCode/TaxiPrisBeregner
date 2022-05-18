@@ -45,7 +45,7 @@ namespace WindowsFormsApp
 
         private void NormalPrisberegner_Click(object sender, EventArgs e)
         {
-            var normalpris = new Form2();
+            var normalpris = new PrisberegnerMenu();
             normalpris.Show();
         }
 
@@ -74,6 +74,12 @@ namespace WindowsFormsApp
         {
             var geteMenuStart = new GeteMenu();
             geteMenuStart.Show();
+        }
+
+        private void HbPrisberegner_Click(object sender, EventArgs e)
+        {
+            var hbMenuStart = new hbPrisBeregner();
+            hbMenuStart.Show();
         }
     }
 }

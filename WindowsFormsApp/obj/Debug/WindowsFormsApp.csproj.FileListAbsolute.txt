@@ -4,7 +4,6 @@ C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\bin\Debug\
 C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.AssemblyReference.cache
 C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.SuggestedBindingRedirects.cache
 C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Debug\WindowsFormsApp.MainMenu.resources
-C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Debug\WindowsFormsApp.Form2.resources
 C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Debug\WindowsFormsApp.Properties.Resources.resources
 C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.GenerateResource.cache
 C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Debug\WindowsFormsApp.csproj.CoreCompileInputs.cache
@@ -39,3 +38,5 @@ C:\Users\lucas\Desktop\TaxiPrisBeregner\WindowsFormsApp\obj\Debug\WindowsFormsAp
 C:\Users\lucas\Desktop\TaxiPrisBeregner\WindowsFormsApp\obj\Debug\WindowsFormsApp.pdb
 C:\Users\lucas\Desktop\TaxiPrisBeregner\WindowsFormsApp\obj\Debug\WindowsFormsApp.GeteMenu.resources
 C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Debug\WindowsFormsApp.GeteMenu.resources
+C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Debug\WindowsFormsApp.hbPrisBeregner.resources
+C:\Users\luczie\Desktop\TaxiBeregner\TaxiPrisBeregner\WindowsFormsApp\obj\Debug\WindowsFormsApp.PrisberegnerMenu.resources

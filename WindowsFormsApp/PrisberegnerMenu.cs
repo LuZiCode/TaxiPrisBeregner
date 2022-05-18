@@ -11,11 +11,11 @@ using ClassLibrary;
 
 namespace WindowsFormsApp
 {
-    public partial class Form2 : Form
+    public partial class PrisberegnerMenu : Form
     {
         private readonly TripDto _trip;
 
-        public Form2()
+        public PrisberegnerMenu()
         {
             InitializeComponent();
             
