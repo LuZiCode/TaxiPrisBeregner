@@ -62,7 +62,7 @@ namespace ClassLibrary
             {
                 return MiniVanBeregner();
             }
-            if (_tripGetE.Storvogn == false)
+            if (!_tripGetE.Storvogn == true)
             {
                 return SedanBeregner();
             }
@@ -122,7 +122,7 @@ namespace ClassLibrary
 
         private decimal DistanceBetween0and5_Sedan()
         {
-            prisprKM = 69m;
+            prisprKM = 37m;
             decimal result = 0;
             if (_tripGetE.ForventetKørtKm > 5)
             {
@@ -139,7 +139,7 @@ namespace ClassLibrary
 
         private decimal DistanceBetween5and15_Sedan()
         {
-            prisprKM = 16m;
+            prisprKM = 12m;
             decimal result = 0;
             if (_tripGetE.ForventetKørtKm > 15)
             {
@@ -157,7 +157,7 @@ namespace ClassLibrary
 
         private decimal DistanceBetween15and50_Sedan()
         {
-            prisprKM = 13m;
+            prisprKM = 10m;
             decimal result = 0;
             if (_tripGetE.ForventetKørtKm > 50)
             {
@@ -174,7 +174,7 @@ namespace ClassLibrary
 
         private decimal DistanceBetween50and100_Sedan()
         {
-            prisprKM = 11m;
+            prisprKM = 8m;
             decimal result = 0;
             if (_tripGetE.ForventetKørtKm > 100)
             {
@@ -191,7 +191,7 @@ namespace ClassLibrary
 
         private decimal DistanceFrom100_Sedan()
         {
-            prisprKM = 13m;
+            prisprKM = 10m;
             decimal result = 0;
             if (_tripGetE.ForventetKørtKm > 100)
             {
@@ -260,7 +260,7 @@ namespace ClassLibrary
 
         private decimal DistanceBetween0and5_Minivan()
         {
-            prisprKM = 69m;
+            prisprKM = 69.2m;
             decimal result = 0;
             if (_tripGetE.ForventetKørtKm > 5)
             {

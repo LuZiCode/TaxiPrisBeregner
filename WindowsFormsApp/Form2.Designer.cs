@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.comboBoxTurType = new System.Windows.Forms.ComboBox();
             this.closebutton = new System.Windows.Forms.Button();
             this.udregnButton = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
@@ -56,7 +57,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.comboBoxTurType = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -108,6 +108,19 @@
             this.splitContainer1.Size = new System.Drawing.Size(1055, 620);
             this.splitContainer1.SplitterDistance = 304;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // comboBoxTurType
+            // 
+            this.comboBoxTurType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxTurType.FormattingEnabled = true;
+            this.comboBoxTurType.Items.AddRange(new object[] {
+            "Radiotur",
+            "Gadetur"});
+            this.comboBoxTurType.Location = new System.Drawing.Point(98, 164);
+            this.comboBoxTurType.Name = "comboBoxTurType";
+            this.comboBoxTurType.Size = new System.Drawing.Size(119, 21);
+            this.comboBoxTurType.TabIndex = 35;
+            this.comboBoxTurType.SelectedIndexChanged += new System.EventHandler(this.comboBoxTurType_SelectedIndexChanged);
             // 
             // closebutton
             // 
@@ -263,6 +276,7 @@
             // 
             // KMnumericUpDown
             // 
+            this.KMnumericUpDown.DecimalPlaces = 2;
             this.KMnumericUpDown.Location = new System.Drawing.Point(98, 56);
             this.KMnumericUpDown.Maximum = new decimal(new int[] {
             10000,
@@ -398,19 +412,6 @@
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri("http://google.com/maps?q=", System.UriKind.Absolute);
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
-            // 
-            // comboBoxTurType
-            // 
-            this.comboBoxTurType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxTurType.FormattingEnabled = true;
-            this.comboBoxTurType.Items.AddRange(new object[] {
-            "Radiotur",
-            "Gadetur"});
-            this.comboBoxTurType.Location = new System.Drawing.Point(98, 164);
-            this.comboBoxTurType.Name = "comboBoxTurType";
-            this.comboBoxTurType.Size = new System.Drawing.Size(119, 21);
-            this.comboBoxTurType.TabIndex = 35;
-            this.comboBoxTurType.SelectedIndexChanged += new System.EventHandler(this.comboBoxTurType_SelectedIndexChanged);
             // 
             // Form2
             // 
