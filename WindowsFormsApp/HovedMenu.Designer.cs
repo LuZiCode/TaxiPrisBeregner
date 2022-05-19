@@ -32,7 +32,6 @@
             this.TaxiLogo = new System.Windows.Forms.PictureBox();
             this.NormalPrisberegner = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.PrisberegnerButton = new System.Windows.Forms.Button();
             this.HBBeregnerButton = new System.Windows.Forms.Button();
@@ -85,7 +84,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.PrisberegnerButton);
             this.panel1.Controls.Add(this.HBBeregnerButton);
@@ -97,13 +95,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 620);
             this.panel1.TabIndex = 12;
-            // 
-            // panel6
-            // 
-            this.panel6.Location = new System.Drawing.Point(200, 131);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(42, 89);
-            this.panel6.TabIndex = 15;
             // 
             // label1
             // 
@@ -326,7 +317,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
     }
 }
 
