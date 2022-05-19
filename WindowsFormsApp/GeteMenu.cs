@@ -140,5 +140,22 @@ namespace WindowsFormsApp
         {
 
         }
+
+        private void FastepriserButton_Click(object sender, EventArgs e)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Fra Lufthavnen til Copenhagen City | Sedan: 300kr | Minivan: 400kr");
+            sb.AppendLine("");
+            sb.AppendLine("Fra Lufthavnen til CAE Copenhagen | Sedan: 150kr | Minivan: 190kr | (Gælder begge veje)");
+            sb.AppendLine("");
+            sb.AppendLine("Fra Lufthavnen til Bella Sky | Sedan: 150kr | Minivan: 190kr | (Gælder begge veje)");
+            sb.AppendLine("");
+            sb.AppendLine("Fra Lufthavnen til Radisson Scandinavia | Sedan: 150kr | Minivan: 190kr | (Gælder begge veje)");
+            sb.AppendLine("");
+            sb.AppendLine("Fra Lufthavnen til Scandic City | Sedan: 300kr | Minivan: 300kr | (Gælder begge veje)");
+
+
+            MessageBox.Show(sb.ToString(), "Faste priser");
+        }
     }
 }
