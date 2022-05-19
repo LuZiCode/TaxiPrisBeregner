@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClassLibrary;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,7 +22,7 @@ namespace WindowsFormsApp
         {
             if (AreacomboBox.Text == "København")
             {
-                SinglePriceTextBox.Text = "ukendt";
+                SinglePriceTextBox.Text = "6,83kr";
             }
             else if (AreacomboBox.Text == "Århus")
             {
@@ -57,7 +58,10 @@ namespace WindowsFormsApp
             decimal antalmin = MINnumericUpDown.Value;
             string område = AreacomboBox.Text;
 
-            var 
+            var Udregning = new HBUdregner();
+            var total = Udregning.TjekningAfOmråde(antalmin, område);
+            
+            TotalTextBox.Text = total.ToString();
         }
     }
 }

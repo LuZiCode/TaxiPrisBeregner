@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(hbPrisBeregner));
             this.AreacomboBox = new System.Windows.Forms.ComboBox();
             this.MINnumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.TotalTextBox = new System.Windows.Forms.TextBox();
@@ -38,7 +38,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.SinglePriceTextBox = new System.Windows.Forms.TextBox();
             this.UdregnButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.MINnumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // AreacomboBox
@@ -62,16 +64,6 @@
             this.MINnumericUpDown.Size = new System.Drawing.Size(120, 20);
             this.MINnumericUpDown.TabIndex = 1;
             this.MINnumericUpDown.ValueChanged += new System.EventHandler(this.MINnumericUpDown_ValueChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(135, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 27);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "HB PRISBEREGNER";
             // 
             // label2
             // 
@@ -117,9 +109,9 @@
             this.label5.Location = new System.Drawing.Point(308, 89);
             this.label5.Name = "label5";
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label5.Size = new System.Drawing.Size(65, 13);
+            this.label5.Size = new System.Drawing.Size(67, 13);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Pris pr. km. :";
+            this.label5.Text = "Pris pr. min. :";
             // 
             // SinglePriceTextBox
             // 
@@ -142,11 +134,23 @@
             this.UdregnButton.UseVisualStyleBackColor = true;
             this.UdregnButton.Click += new System.EventHandler(this.UdregnButton_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(132, -62);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(220, 131);
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // hbPrisBeregner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(492, 267);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.UdregnButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.SinglePriceTextBox);
@@ -154,12 +158,14 @@
             this.Controls.Add(this.TotalTextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.MINnumericUpDown);
             this.Controls.Add(this.AreacomboBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "hbPrisBeregner";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HB Prisberegner";
             ((System.ComponentModel.ISupportInitialize)(this.MINnumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,7 +175,6 @@
 
         private System.Windows.Forms.ComboBox AreacomboBox;
         private System.Windows.Forms.NumericUpDown MINnumericUpDown;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox TotalTextBox;
@@ -177,5 +182,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox SinglePriceTextBox;
         private System.Windows.Forms.Button UdregnButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -33,12 +33,7 @@ namespace WindowsFormsApp
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LukNed_Click(object sender, EventArgs e)
+            private void LukNed_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
@@ -80,6 +75,52 @@ namespace WindowsFormsApp
         {
             var hbMenuStart = new hbPrisBeregner();
             hbMenuStart.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        //HB Beregner
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var hbpris = new hbPrisBeregner();
+            hbpris.Show();
+        }
+
+        //Taxi4x27 Logo
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://4x27.dk/");
+        }
+
+        //Normal prisberegner
+        private void PrisberegnerButton_Click(object sender, EventArgs e)
+        {
+            var lægevagtpris = new LægevagtMenu();
+            lægevagtpris.Show();
+        }
+
+        private void LægevagtPortalKnap_Click_1(object sender, EventArgs e)
+        {
+            Process.Start("https://deltaplan.dk/logIn");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var getepris = new GeteMenu();
+            getepris.Show();
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Process.Start("https://portal.get-e.com/portal/login");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://www.flightstats.com/v2/");
         }
     }
 }

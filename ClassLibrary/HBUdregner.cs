@@ -6,19 +6,56 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary
 {
-    internal class HBUdregner
+    public class HBUdregner
     {
-        public void TjekningAfOmråde(decimal antalmin, string område)
+        public object TjekningAfOmråde(decimal antalmin, string område)
         {
             if (område == "Vejle")
             {
-                VejleUdregning(område, antalmin)
+                return VejleUdregning(antalmin);
             }
+            if (område == "Århus")
+            {
+                return ÅrhusUdregning(antalmin);
+            }
+            if (område == "København")
+            {
+                return KøbenhavnUdregning(antalmin);
+            }
+            if (område == "Øvrig")
+            {
+                return ØvrigUdregning(antalmin);
+            }
+            else return 0;
         }
 
-        private void VejleUdregning(string område, decimal antamin)
+        private decimal ØvrigUdregning(decimal antalmin)
         {
-            throw new NotImplementedException();
+            decimal prisPrMin = 13.33m;
+            decimal result = antalmin * prisPrMin;
+            return result;
+
+        }
+
+        private decimal KøbenhavnUdregning(decimal antalmin)
+        {
+            decimal prisPrMin = 6.583m;
+            decimal result = antalmin * prisPrMin;
+            return result;
+        }
+
+        private decimal ÅrhusUdregning(decimal antalmin)
+        {
+            decimal prisPrMin = 15m;
+            decimal result = antalmin * prisPrMin;
+            return result;
+        }
+
+        private decimal VejleUdregning(decimal antalmin)
+        {
+            decimal prisPrMin = 16.67m;
+            decimal result = antalmin * prisPrMin;
+            return result;
         }
     }
 }
