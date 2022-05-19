@@ -31,6 +31,7 @@ namespace WindowsFormsApp
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GeteMenu));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.FastepriserButton = new System.Windows.Forms.Button();
             this.MeetGreetCheckBox = new System.Windows.Forms.CheckBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ResultTextBox = new System.Windows.Forms.TextBox();
@@ -49,7 +50,6 @@ namespace WindowsFormsApp
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.FastepriserButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -64,7 +64,7 @@ namespace WindowsFormsApp
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -96,11 +96,21 @@ namespace WindowsFormsApp
             this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 0;
             // 
+            // FastepriserButton
+            // 
+            this.FastepriserButton.Location = new System.Drawing.Point(120, 96);
+            this.FastepriserButton.Name = "FastepriserButton";
+            this.FastepriserButton.Size = new System.Drawing.Size(114, 27);
+            this.FastepriserButton.TabIndex = 18;
+            this.FastepriserButton.Text = "Fremvis Fastepriser";
+            this.FastepriserButton.UseVisualStyleBackColor = true;
+            this.FastepriserButton.Click += new System.EventHandler(this.FastepriserButton_Click);
+            // 
             // MeetGreetCheckBox
             // 
             this.MeetGreetCheckBox.AutoSize = true;
             this.MeetGreetCheckBox.Location = new System.Drawing.Point(136, 285);
-            this.MeetGreetCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MeetGreetCheckBox.Margin = new System.Windows.Forms.Padding(2);
             this.MeetGreetCheckBox.Name = "MeetGreetCheckBox";
             this.MeetGreetCheckBox.Size = new System.Drawing.Size(15, 14);
             this.MeetGreetCheckBox.TabIndex = 17;
@@ -113,7 +123,7 @@ namespace WindowsFormsApp
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox2.Location = new System.Drawing.Point(193, 539);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(230, 107);
             this.pictureBox2.TabIndex = 16;
@@ -122,7 +132,7 @@ namespace WindowsFormsApp
             // ResultTextBox
             // 
             this.ResultTextBox.Location = new System.Drawing.Point(82, 480);
-            this.ResultTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ResultTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.ResultTextBox.Multiline = true;
             this.ResultTextBox.Name = "ResultTextBox";
             this.ResultTextBox.ReadOnly = true;
@@ -134,7 +144,7 @@ namespace WindowsFormsApp
             // UdregnButton
             // 
             this.UdregnButton.Location = new System.Drawing.Point(120, 396);
-            this.UdregnButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UdregnButton.Margin = new System.Windows.Forms.Padding(2);
             this.UdregnButton.Name = "UdregnButton";
             this.UdregnButton.Size = new System.Drawing.Size(120, 41);
             this.UdregnButton.TabIndex = 14;
@@ -146,7 +156,7 @@ namespace WindowsFormsApp
             // 
             this.ØresundCheckBox.AutoSize = true;
             this.ØresundCheckBox.Location = new System.Drawing.Point(136, 341);
-            this.ØresundCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ØresundCheckBox.Margin = new System.Windows.Forms.Padding(2);
             this.ØresundCheckBox.Name = "ØresundCheckBox";
             this.ØresundCheckBox.Size = new System.Drawing.Size(15, 14);
             this.ØresundCheckBox.TabIndex = 13;
@@ -167,7 +177,7 @@ namespace WindowsFormsApp
             // 
             this.StorebæltCheckBox.AutoSize = true;
             this.StorebæltCheckBox.Location = new System.Drawing.Point(136, 315);
-            this.StorebæltCheckBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.StorebæltCheckBox.Margin = new System.Windows.Forms.Padding(2);
             this.StorebæltCheckBox.Name = "StorebæltCheckBox";
             this.StorebæltCheckBox.Size = new System.Drawing.Size(15, 14);
             this.StorebæltCheckBox.TabIndex = 11;
@@ -203,7 +213,7 @@ namespace WindowsFormsApp
             "Sedan",
             "Minivan"});
             this.VogntypeComboBox.Location = new System.Drawing.Point(136, 226);
-            this.VogntypeComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.VogntypeComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.VogntypeComboBox.Name = "VogntypeComboBox";
             this.VogntypeComboBox.Size = new System.Drawing.Size(92, 21);
             this.VogntypeComboBox.TabIndex = 7;
@@ -232,7 +242,7 @@ namespace WindowsFormsApp
             // EkstraStopNumUpDown
             // 
             this.EkstraStopNumUpDown.Location = new System.Drawing.Point(136, 193);
-            this.EkstraStopNumUpDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EkstraStopNumUpDown.Margin = new System.Windows.Forms.Padding(2);
             this.EkstraStopNumUpDown.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -255,8 +265,9 @@ namespace WindowsFormsApp
             // 
             // AntalKMnumUpDown
             // 
+            this.AntalKMnumUpDown.DecimalPlaces = 2;
             this.AntalKMnumUpDown.Location = new System.Drawing.Point(136, 161);
-            this.AntalKMnumUpDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AntalKMnumUpDown.Margin = new System.Windows.Forms.Padding(2);
             this.AntalKMnumUpDown.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -272,7 +283,7 @@ namespace WindowsFormsApp
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.pictureBox1.Location = new System.Drawing.Point(49, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(242, 72);
             this.pictureBox1.TabIndex = 0;
@@ -282,22 +293,12 @@ namespace WindowsFormsApp
             // 
             this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.webBrowser1.Location = new System.Drawing.Point(0, 0);
-            this.webBrowser1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.webBrowser1.Margin = new System.Windows.Forms.Padding(2);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(15, 16);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(701, 620);
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri("http://google.com/maps", System.UriKind.Absolute);
-            // 
-            // FastepriserButton
-            // 
-            this.FastepriserButton.Location = new System.Drawing.Point(120, 96);
-            this.FastepriserButton.Name = "FastepriserButton";
-            this.FastepriserButton.Size = new System.Drawing.Size(114, 27);
-            this.FastepriserButton.TabIndex = 18;
-            this.FastepriserButton.Text = "Fremvis Fastepriser";
-            this.FastepriserButton.UseVisualStyleBackColor = true;
-            this.FastepriserButton.Click += new System.EventHandler(this.FastepriserButton_Click);
             // 
             // GeteMenu
             // 
@@ -305,7 +306,7 @@ namespace WindowsFormsApp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1055, 620);
             this.Controls.Add(this.splitContainer1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GeteMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GET-E Prisberegner";

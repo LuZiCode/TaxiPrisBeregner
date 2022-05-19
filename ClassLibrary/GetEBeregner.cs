@@ -260,7 +260,7 @@ namespace ClassLibrary
 
         private decimal DistanceBetween0and5_Minivan()
         {
-            prisprKM = 69.2m;
+            prisprKM = 49.2m;
             decimal result = 0;
             if (_tripGetE.ForventetKørtKm > 5)
             {
