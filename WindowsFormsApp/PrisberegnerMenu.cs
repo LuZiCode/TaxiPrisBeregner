@@ -57,10 +57,7 @@ namespace WindowsFormsApp
 
         private void CykelcheckBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (CykelcheckBox.Checked)
-            {
-                _trip.ValgteTillæg.Add(Tillæg.CykelOpbæringOgHjælp);
-            }
+            SetBridge(CykelcheckBox.Checked, Tillæg.CykelOpbæringOgHjælp);
         }
 
         private void LufthavncheckBox_CheckedChanged(object sender, EventArgs e)
