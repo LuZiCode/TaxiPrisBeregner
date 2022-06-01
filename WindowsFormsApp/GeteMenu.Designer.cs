@@ -50,6 +50,7 @@ namespace WindowsFormsApp
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -70,6 +71,7 @@ namespace WindowsFormsApp
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.White;
+            this.splitContainer1.Panel1.Controls.Add(this.button1);
             this.splitContainer1.Panel1.Controls.Add(this.FastepriserButton);
             this.splitContainer1.Panel1.Controls.Add(this.MeetGreetCheckBox);
             this.splitContainer1.Panel1.Controls.Add(this.pictureBox2);
@@ -300,6 +302,16 @@ namespace WindowsFormsApp
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.Url = new System.Uri("http://google.com/maps", System.UriKind.Absolute);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(13, 585);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "LUK";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // GeteMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -345,5 +357,6 @@ namespace WindowsFormsApp
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.CheckBox MeetGreetCheckBox;
         private System.Windows.Forms.Button FastepriserButton;
+        private System.Windows.Forms.Button button1;
     }
 }
